@@ -1,0 +1,137 @@
+
+
+.cart-container {
+  padding: 3rem 1rem;
+  border-top: 1px solid #e5e7eb;
+  color: #1f2937;
+  background-color: #fafafa;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 3rem ;
+}
+
+.cart-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #111827;
+}
+
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.cart-item {
+  display: grid;
+  grid-template-columns: 4fr 1fr 0.5fr;
+  gap: 1rem;
+  border-top: 1px solid #e5e7eb;
+  padding: 1.5rem 0;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+}
+
+.item-details {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.item-image {
+  width: 72px;
+  height: 72px;
+  object-fit: cover;
+  border-radius: 8px;
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+}
+
+.item-name {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #111827;
+}
+
+.item-meta {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.item-size {
+  padding: 0.3rem 0.9rem;
+  background-color: #f3f4f6;
+  border: 1px solid #d1d5db;
+  font-size: 0.875rem;
+  border-radius: 6px;
+  color: #374151;
+}
+
+.item-qty {
+  max-width: 60px;
+  padding: 0.4rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 0.95rem;
+  background-color: #fff;
+  outline: none;
+}
+
+.delete-icon {
+  width: 18px;
+  cursor: pointer;
+  filter: grayscale(100%);
+  transition: transform 0.2s ease;
+}
+
+.delete-icon:hover {
+  transform: scale(1.2);
+  filter: grayscale(0%);
+}
+
+
+.cart-footer {
+  display: flex;
+  justify-content: flex-end;
+  margin: 4rem 0;
+  background-image: url("https://www.tryparcel.com/_next/image?url=https:%2F%2Fparcel-landing.s3.me-south-1.amazonaws.com%2FTake_Away_2_7480e4a019.gif&w=640&q=75");
+  background-repeat: no-repeat;
+  background-size:contain;
+}
+
+.cart-total-wrapper {
+  width: 100%;
+  max-width: 700px;
+}
+
+.checkout-btn-wrapper {
+  text-align: center;
+}
+
+.checkout-btn {
+  background-color: #000;
+  color: #fff;
+  font-size: 0.9rem;
+  padding: 0.75rem 2rem;
+  margin-top: 2rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.checkout-btn:hover {
+    border-radius: 10px;
+    background-color: #333;
+}
+
+.missed-collection{
+  font-size: xx-large;
+  font-weight: 300;
+  text-align: left;
+}

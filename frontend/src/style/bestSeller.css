@@ -1,0 +1,138 @@
+/* .bestseller-container {
+  margin-top: -75px;
+  margin-bottom: 35px;
+}
+
+.bestseller-header {
+  text-align: center;
+  font-size: 1.875rem; 
+  padding: 2rem 0;   
+}
+
+.bestseller-description {
+  width: 75%;
+  margin: auto;
+  font-size: 0.75rem;       
+  color: #4b5563;          
+}
+
+@media (min-width: 640px) {
+  .bestseller-description {
+    font-size: 0.875rem; 
+  }
+}
+
+@media (min-width: 768px) {
+  .bestseller-description {
+    font-size: 1rem; 
+  }
+}
+
+.bestseller-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem 1rem; 
+}
+
+@media (min-width: 640px) {
+  .bestseller-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .bestseller-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .bestseller-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+} */
+
+/* Base Style: Mobile-first */
+.bestseller-container {
+  margin: 3rem 1rem;
+  padding: 2rem 1rem;
+  background: linear-gradient(to right, #fefefe, #f8fafc);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+}
+
+.bestseller-header {
+  text-align: center;
+  font-size: 2rem;
+  font-family: 'Prata', serif;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+.bestseller-description {
+  font-size: 0.95rem;
+  color: #4b5563;
+  line-height: 1.6;
+  text-align: center;
+  max-width: 95%;
+  margin: 0 auto 2rem;
+}
+
+.bestseller-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.bestseller-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.03);
+  transition: 0.3s ease-in-out;
+}
+
+.bestseller-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Tablet: ≥ 640px */
+@media (min-width: 640px) {
+  .bestseller-description {
+    font-size: 1rem;
+    max-width: 85%;
+  }
+
+  .bestseller-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+
+/* Small Laptop: ≥ 768px */
+@media (min-width: 768px) {
+  .bestseller-container {
+    padding: 3rem 2rem;
+  }
+
+  .bestseller-header {
+    font-size: 2.5rem;
+  }
+
+  .bestseller-description {
+    max-width: 750px;
+  }
+
+  .bestseller-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Desktop: ≥ 1024px */
+@media (min-width: 1024px) {
+  .bestseller-grid {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+  }
+}
