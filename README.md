@@ -1,143 +1,120 @@
-# 👕 Chiguru Cloth Store
+# 👕 Chiguru Cloth Store – MERN Stack eCommerce App
 
-Chiguru Cloth Store is a full-featured **e-commerce web application** built using the **MERN stack** (MongoDB, Express.js, React.js, Node.js). This project includes a customer-facing online store as well as an admin dashboard for managing products, orders, and subscribers.
+Chiguru Cloth Store is a modern **full-stack eCommerce web application** built using the **MERN stack**: MongoDB, Express.js, React.js, and Node.js.
 
-> It offers real-time order tracking, email-based coupon systems, secure login, and a seamless shopping experience across categories like Men, Women, and Kids.
+It offers a complete online shopping experience for customers across **Men**, **Women**, and **Kids** categories, along with an integrated **Admin Dashboard** to manage products, orders, and subscribers.
 
----
-
-## 🌟 Features
-
-### 🛍️ User Side
-
-- Browse & filter clothes by category, subcategory, and size
-- Add to cart with selected sizes
-- Account-based authentication (JWT)
-- Create account, login, and personalized cart/orders
-- Forgot password support via Contact page
-- Checkout with:
-  - Address form
-  - Payment method selection (Card, UPI, Cash on Delivery)
-- Order confirmation with live tracking status
-- Email subscription with coupon code & redeem link (via Nodemailer)
-- Mobile responsive design
+> ✨ Real-time order tracking, secure user login, coupon-based email marketing, and a clean, intuitive shopping interface.
 
 ---
 
-### 📄 Pages
+## 🌟 Key Features
 
-1. **Home** – Store intro and promotions  
-2. **Collections** – Filter and search products  
-3. **Contact** – Store location and support  
-4. **About** – Brand story   
-5. **Cart Page** – View & update cart, add quantities  
-6. **Account Page** – Profile, login/logout, and orders  
-7. **Orders (inside Account)** –  
-   - Product summary  
-   - Quantity & total  
-   - Payment method  
-   - Live order status updates  
-8. **Login/Register (inside Account)**  
-9. **Checkout Page** –  
-   - Fill address  
-   - Choose payment  
-   - Place order  
-10. **Footer** – Contact info, brand logo, quick links
+### 🛍️ User Experience
+- Browse and filter clothing by category, subcategory, and size
+- Add items to cart with size and quantity options
+- Secure login, registration, and account-based shopping
+- Checkout with address and payment method selection
+- Order tracking with live status updates
+- Email subscription with coupon delivery (via Nodemailer)
+
+---
+
+## 📄 Main Pages
+
+| Page        | Description |
+|-------------|-------------|
+| **Home**    | Store introduction and promo highlights |
+| **Collections** | Product listings with filters |
+| **Contact** | Store location and support |
+| **About**   | Brand and mission |
+| **Cart**    | View and modify cart items |
+| **Account** | Login, register, view orders |
+| **Orders**  | Order summary with tracking |
+| **Checkout**| Fill shipping address, select payment |
+| **Footer**  | Quick links and brand info |
 
 ---
 
 ## 🔐 Authentication
 
-- JWT-based login system
-- Passwords are hashed using bcrypt
-- Auth-protected routes for cart, orders, and admin
-- Each user's cart & orders are stored securely under their account
+- Login system using **JSON Web Tokens (JWT)**
+- Passwords are securely hashed using **bcrypt**
+- Auth-protected routes for orders, cart, and admin access
+- User data is scoped to their individual account
 
 ---
 
-## ✉️ Email Subscription (Nodemailer)
+## 📬 Email Subscription (via Nodemailer)
 
-- Subscribe to the store’s newsletter
-- Receives a welcome email with:
-  - Coupon Code
-  - "Redeem Now" button that links to the store
+- Users can subscribe to the newsletter
+- Automatically receive an email with:
+  - A **coupon code**
+  - A **"Redeem Now"** link leading back to the store
 
 ---
 
+## 🛠️ Admin Panel
 
-## 📦 Admin Panel
+> Access route: `/admin/chiguru`
 
-A secure dashboard for store administrators.
-## 🔐 Admin Panel Access
+### Features:
+- **Add Products**
+  - Upload 4 images
+  - Add name, description, price, available sizes
+  - Select category (Men, Women, Kids) and subcategory
+  - Optional "Best Seller" toggle
 
-The admin panel is available at the following route:
+- **Manage Products**
+  - View all products in list format
+  - Delete products
 
-in home page of user website in search bar  **/admin/chiguru*
+- **Manage Orders**
+  - View complete order details:
+    - Product summary
+    - Quantity
+    - Payment method
+    - Delivery address
+    - Order date
+  - Update order status:
+    - Order Placed → Packing → Shipped → Out for Delivery → Delivered → Cancelled
 
-### 1. Add Items
-- Upload 4 product images
-- Product details: name, description, price, available sizes
-- Category: Men / Women / Kids
-- Subcategory: Top Wear / Bottom Wear / Winter Wear
-- Toggle to mark as "Best Seller"
-- Add button to save in database
-
-### 2. Manage Products
-- View all products in list format
-- Includes:
-  - Image, name, category, price
-  - Delete button to remove products
-
-### 3. Manage Orders
-- View all user orders
-- Details include:
-  - Items ordered
-  - Quantity
-  - Payment method
-  - Total price
-  - Address
-  - Order date
-- Update order status:
-  - Order Placed
-  - Packing
-  - Shipped
-  - Out for Delivery
-  - Delivered
-  - Cancelled
-
-### 4. Subscribers List
-- View all subscribed user emails
-- Search bar to filter through list
+- **View Subscribers**
+  - Email list of subscribers
+  - Search functionality
 
 ---
 
 ## 🧰 Tech Stack
 
-**Frontend:**
+### Frontend
 - React.js
-- React Router (for page routing)
-- Styled CSS 
+- React Router
+- Styled CSS
 
-**Backend:**
+### Backend
 - Node.js
 - Express.js
 
-**Database:**
+### Database
 - MongoDB
 - Mongoose
 
-**Authentication:**
-- JSON Web Tokens (JWT) for session management
-- bcrypt for password hashing and security
+### Authentication & Security
+- JWT for login tokens
+- bcrypt for password hashing
 
-**Email Service:**
-- Nodemailer (used to send coupon/subscription emails)
+### External Services
+- **Cloudinary**: Image hosting
+- **Nodemailer**: Subscription email system
 
-**Image/File Upload :**
-- Cloudinary
+---
 
-## ⚠️ Important Note
+## 📌 Project Highlights
 
-This application is currently **optimized for desktop use**. While it may load on mobile devices, certain features and layouts are not fully responsive or tested for smaller screen sizes.
+- Seamless product browsing and order flow
+- Modular structure for scalability
+- Admin control over product and order lifecycle
+- Customer engagement via email marketing
 
-
+---
